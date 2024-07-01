@@ -1,0 +1,128 @@
+/* styles.css */
+
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+padding: 0%;  
+}
+
+/* Navbar Component */
+/* navbarstyle.css */
+.navbar {
+  color: #2c2c2c;
+  padding: 7px 7px;
+  display: flex;
+  justify-content: center; /* Space between navbar-tabs and user-info */
+  align-items: center;
+}
+
+.navbar-tabs {
+  display: flex;
+  justify-content: center; /* Center the navbar-tabs */
+  gap: 15px;
+  background-color: #ffffff;
+  padding: 2px 2px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.navbar-tabs a {
+  text-decoration: none;
+  background-color: #25243d; /* Button background color */
+  color: #ffffff;
+  font-size: 13px;
+  padding: 8px 13px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.home-tab-button :hover {
+  border: 1.5px solid #cbcbcbd7;
+}
+
+/* User Info Section */
+.user-info {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the navbar-tabs */
+  background-color: #25243d; /* Button background color */
+  padding: 2px 6px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  padding-left: 2px;
+}
+
+.user-info p {
+  margin: 0 6px;
+  font-size: 14px;
+}
+
+.navbar-image {
+  border-radius: 50%;
+  width: 27px;
+  height: 27px;
+}
+
+.logout-button {
+  position: absolute;
+  color: #000000;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border: 1.5px solid #b4b4b4f3;
+  padding: 4px 8px;
+  border-radius: 20px;
+  top: 11px;
+  right: 25px;
+}
+
+.logout-button:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Home Component */
+.home-container1{
+  padding: 20px;
+}
+
+/* Create Post Button */
+.create-post-button {
+  position: fixed;
+  bottom: 44px;
+  right: 122px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #f7a9c0 0%, #8ba5f4 100%);
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.create-post-button:hover {
+  background-color: #ffafcc; /* Lighter pink on hover */
+  transform: scale(1.1);
+}
+
+
+
+

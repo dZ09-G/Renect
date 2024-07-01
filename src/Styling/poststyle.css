@@ -1,0 +1,162 @@
+
+.postContainer {
+    width: 50%;
+    margin: 20px auto; /* Center align the post cards */
+    padding: 20px;
+    padding-bottom: 12px;
+    border: 2px solid rgba(0, 0, 0, 0.075); /* Light grey border with low opacity */
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    margin-top: 20px; /* Add margin to push down below header */
+    position: relative; /* Position relative for absolute positioning of like button */
+}
+.postContainer:hover{
+    box-shadow: 0 1px 12px rgba(81, 81, 81, 0.1);
+
+}
+
+.postUsername {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.postUsername p {
+    margin: 0;
+    padding: 5px 10px;
+    border-radius: 15px; /* Pill shape */
+    background-color: #e3e3e3;
+    font-weight: bold; 
+    display: inline-flex;
+    align-items: center;
+}
+
+.postUsername p::before {
+    content: '@';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fd79a8;
+    color: white;
+    text-align: center;
+    line-height: 20px;
+    margin-right: 5px;
+}
+
+.postTitle p {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.postDescription p {
+    margin: 0;
+    font-size: 1em;
+    line-height: 1.4;
+    background-color: rgba(164, 164, 164, 0.073);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.likeDiv {
+    width: 50px;
+    height: 27px;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-left: 604px;
+    border-radius: 20px; /* Pill shape */
+    background-color: #f0f0f0;
+    padding: 2px 3px;
+    border: 2px solid rgba(0, 0, 0, 0.075);
+    transition:  0.3s ease;
+}
+
+.likeDiv:hover {
+    background-color: #fb74a35a; /* Lighter background on hover */
+    border-color: rgba(255, 119, 178, 0.06); /* Adjusted border color on hover */
+}
+
+.likeButton {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: #f0f0f0; /* Match post card background color */
+    background-color: #b7b7b7c3; /* Default background color */
+    transition: 0.3s ease; /* Smooth transition on hover */
+}
+
+.likeButton:hover {
+    font-size: 1.16em;
+}
+
+.editPost{
+    display: flex;
+    position: absolute;
+    top: 24px;
+    right: 52px;
+    align-items: center;
+}
+
+.editButton{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.112);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+    color: #848484ca; /* Match post card background color */
+    transition:  0.3s ease; /* Smooth transition on hover */
+}
+
+.editButton:hover{
+    border: 2px solid #806fff13;
+    background-color:#aa9fffa5;
+    color: #ffffff;
+}
+ 
+.likeCount {
+    margin-left: 5px;
+    font-size: 0.8em; /* Adjust size as needed */
+    font-weight: bold;
+}
+
+
+.deletePost{
+    display: flex;
+    position: absolute;
+    top: 24px;
+    right: 23px;
+    align-items: center;
+}
+
+.deleteButton{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.112);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+    color: #848484ca; /* Match post card background color */
+    transition:  0.3s ease; /* Smooth transition on hover */
+}
+
+.deleteButton:hover{
+    border: 2px solid rgba(255, 62, 78, 0.123);
+    background-color:rgba(254, 44, 65, 0.512);
+    color: #ffffff;
+}
