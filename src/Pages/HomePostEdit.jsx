@@ -1,7 +1,7 @@
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
 import * as yup from "yup";
-import '../Styling/cfstyle.css'; // Import your CSS file
+import '../Styling/cfstyle.css';
 import {userN, userId} from "../Components/Navbar";
 import { useNavigate } from "react-router-dom";
 import {postClosure} from "./HomePosts";
@@ -13,13 +13,11 @@ import {  doc, updateDoc } from "firebase/firestore";
 
 export const HomePostEdit = (props) => {
     const { editPost } = props;
-     // Define Yup schema for validation
   const schema = yup.object().shape({
     title: yup.string().required("Title is required"),
     description: yup.string().required("Description is required")
   });
 
-  // useForm hook from react-hook-form
   const { register, handleSubmit, formState: { errors } } = useForm({
     resolver: yupResolver(schema),
     defaultValues: {
