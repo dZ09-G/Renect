@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Home } from "./Pages/Home";
 import { Signin } from "./Pages/Signin";
 import { Navbar } from "./Components/Navbar";
-import './Styling/styles.css'; // Import styles.css for styling
+import './Styling/styles.css';
 import { CreatePost } from './Pages/Create-post';
 import { HomePostEdit } from './Pages/HomePostEdit';
 import { ProfileButtonProvider } from './ProfileButtonContext';
