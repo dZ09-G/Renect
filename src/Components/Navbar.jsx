@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { Link, useNavigate } from "react-router-dom";
 import { auth } from "../config/firebase";
-import '../Styling/styles.css'; // Import styles.css for styling
+import '../Styling/styles.css';
 import { signOut } from "firebase/auth";
 import { ProfileButtonContext } from '../ProfileButtonContext';
 import {LogedinContext} from "../LogedinContext";
@@ -13,8 +13,8 @@ let userLogedin= false;
 let userPhoto="";
 
 export function Navbar() {
-  const [uName, setUName] = useState(""); // State to hold user's display name
-  const [photoURL, setPhotoURL] = useState(""); // State to hold user's photo URL
+  const [uName, setUName] = useState("");
+  const [photoURL, setPhotoURL] = useState("");
   const [logedin, setLogedin] = useState(false);
   const { profileButtonState, setProfileButtonState } = useContext(ProfileButtonContext);
   const { logedinState, setlogedinState } = useContext(LogedinContext);
@@ -30,7 +30,6 @@ export function Navbar() {
   };
 
   useEffect(() => {
-    // Set initial user data when component mounts
     if (auth.currentUser) {
       setUName(auth.currentUser.displayName || "Unknown");
       setPhotoURL(auth.currentUser.photoURL || "");
@@ -42,7 +41,6 @@ export function Navbar() {
     }
   }, []);
 
-  // useEffect to update user data when auth changes
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged(user => {
       if (user) {
@@ -61,7 +59,7 @@ export function Navbar() {
       }
     });
 
-    return () => unsubscribe(); // Clean up subscription
+    return () => unsubscribe();
   }, []);
 
 
@@ -80,7 +78,6 @@ export function Navbar() {
   }
 
   useEffect(() => {
-    // Retrieve profileButtonState from localStorage on component mount
     const storedProfileButtonState = localStorage.getItem('profileButtonState');
     if (storedProfileButtonState !== null) {
       setProfileButtonState(JSON.parse(storedProfileButtonState));
