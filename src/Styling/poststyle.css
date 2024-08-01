@@ -1,14 +1,14 @@
 
 .postContainer {
     width: 50%;
-    margin: 20px auto; /* Center align the post cards */
+    margin: 20px auto;
     padding: 20px;
     padding-bottom: 12px;
-    border: 2px solid rgba(0, 0, 0, 0.075); /* Light grey border with low opacity */
+    border: 2px solid rgba(0, 0, 0, 0.075);
     border-radius: 10px;
     background-color: #f0f0f0;
-    margin-top: 20px; /* Add margin to push down below header */
-    position: relative; /* Position relative for absolute positioning of like button */
+    margin-top: 20px;
+    position: relative;
 }
 .postContainer:hover{
     box-shadow: 0 1px 12px rgba(81, 81, 81, 0.1);
@@ -24,7 +24,7 @@
 .postUsername p {
     margin: 0;
     padding: 5px 10px;
-    border-radius: 15px; /* Pill shape */
+    border-radius: 15px;
     background-color: #e3e3e3;
     font-weight: bold; 
     display: inline-flex;
@@ -67,7 +67,7 @@
     align-items: center;
     margin-top: 15px;
     margin-left: 604px;
-    border-radius: 20px; /* Pill shape */
+    border-radius: 20px;
     background-color: #f0f0f0;
     padding: 2px 3px;
     border: 2px solid rgba(0, 0, 0, 0.075);
@@ -75,8 +75,8 @@
 }
 
 .likeDiv:hover {
-    background-color: #fb74a35a; /* Lighter background on hover */
-    border-color: rgba(255, 119, 178, 0.06); /* Adjusted border color on hover */
+    background-color: #fb74a35a;
+    border-color: rgba(255, 119, 178, 0.06);
 }
 
 .likeButton {
@@ -89,9 +89,9 @@
     justify-content: center;
     align-items: center;
     font-size: 1em;
-    color: #f0f0f0; /* Match post card background color */
-    background-color: #b7b7b7c3; /* Default background color */
-    transition: 0.3s ease; /* Smooth transition on hover */
+    color: #f0f0f0;
+    background-color: #b7b7b7c3;
+    transition: 0.3s ease;
 }
 
 .likeButton:hover {
@@ -116,8 +116,8 @@
     justify-content: center;
     align-items: center;
     font-size: 0.8em;
-    color: #848484ca; /* Match post card background color */
-    transition:  0.3s ease; /* Smooth transition on hover */
+    color: #848484ca;
+    transition:  0.3s ease;
 }
 
 .editButton:hover{
@@ -128,7 +128,7 @@
  
 .likeCount {
     margin-left: 5px;
-    font-size: 0.8em; /* Adjust size as needed */
+    font-size: 0.8em;
     font-weight: bold;
 }
 
@@ -151,8 +151,8 @@
     justify-content: center;
     align-items: center;
     font-size: 0.8em;
-    color: #848484ca; /* Match post card background color */
-    transition:  0.3s ease; /* Smooth transition on hover */
+    color: #848484ca;
+    transition:  0.3s ease;
 }
 
 .deleteButton:hover{
