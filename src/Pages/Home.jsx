@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react';
-import '../Styling/styles.css'; // Adjust path as needed
+import '../Styling/styles.css';
 import { collection, query, where, getDocs, deleteDoc, doc, updateDoc } from "firebase/firestore";
 import { database } from "../config/firebase";
 import { HomePosts } from "./HomePosts";
@@ -17,7 +17,7 @@ import {LogedinContext} from "../LogedinContext";
 export const Home = () => {
   const [postList, setPostList] = useState(null);
   const { profileButtonState } = useContext(ProfileButtonContext);
-  const navigate = useNavigate(); // React Router hook for navigation
+  const navigate = useNavigate();
   const { logedinState, setlogedinState } = useContext(LogedinContext);
 
 
@@ -37,7 +37,7 @@ export const Home = () => {
     try {
       const toDeletePostRef = doc(database, "posts", deletePostIdArg);
       await deleteDoc(toDeletePostRef);
-      getPosts(); // Refresh the post list after deletion
+      getPosts();
     } catch (error) {
       console.error("Error deleting post:", error);
     }
@@ -52,7 +52,7 @@ export const Home = () => {
 
 
   if (!logedinState) {
-    return null; // Render nothing if user is not logged in
+    return null;
   }
   return (
     <>
