@@ -1,49 +1,42 @@
-/* cfstyle.css */
-
-/* Container styling */
 .cfcontainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 84vh; /* Adjust as needed */
-  background-color: #f0f0f0; /* Light gray background */
+  height: 84vh;
+  background-color: #f0f0f0;
 }
 
-/* Title input styling */
 .title {
-  width: 65%; /* Adjust width as needed */
-  padding: 20px; /* Padding around text */
-  font-size: 50px; /* Large font size */
-  background-color: transparent; /* Transparent background */
-  border: none; /* No border */
-  outline: none; /* No outline */
-  text-align: left; /* Left align text */
+  width: 65%;
+  padding: 20px;
+  font-size: 50px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  text-align: left;
 }
 
-/* Description textarea styling */
 .description {
-  width: 90%; /* Fixed width of 140px */
-  height: 300px; /* Adjust height as needed */
-  padding: 20px; /* Padding around text */
-  font-size: 16px; /* Normal font size */
+  width: 90%;
+  height: 300px;
+  padding: 20px;
+  font-size: 16px;
   background: linear-gradient(135deg, #FFC2D4 0%, #E2E2FF 100%);
-  border: none; /* No border */
-  outline: none; /* No outline */
-  resize: none; /* Disable resizing */
-  text-align: left; /* Center text */
-  border-radius: 20px; /* Rounded corners for pill shape */
+  border: none;
+  outline: none;
+  resize: none;
+  text-align: left;
+  border-radius: 20px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Error message styling */
 .error-message {
-  color: red; /* Red color for error messages */
-  font-size: 14px; /* Font size of error messages */
-  margin-top: 5px; /* Space above error messages */
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
 }
 
-/* Submit button styling */
 .submit-button {
   position: absolute;
   bottom: 130px;
