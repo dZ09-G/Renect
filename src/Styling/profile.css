@@ -1,11 +1,11 @@
 .profilepage-section-container {
     height: 50vh;
-    border-bottom: 1.5px solid #cbcbcbd7; /* Light gray border */
+    border-bottom: 1.5px solid #cbcbcbd7;
 }
 
 .profilepage-image-container {
     position: absolute;
-    z-index: 1; /* Lower z-index to be behind the name container */
+    z-index: 1;
     mask-image: linear-gradient(to right, rgba(216, 216, 216, 0.704) 0%, transparent 100%);
 }
 
@@ -20,10 +20,10 @@
     padding-left: 60px;
     padding-top: 115px;
     padding-right: 20px;
-    z-index: 2; /* Higher z-index to be on top of the image container */
+    z-index: 2;
 }
 
 .profilepage-name {
     font-size: 160px;
-    text-shadow: 1px 1px 1px rgb(255, 255, 255); /* Add solid outline directly to the text */
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
 }
