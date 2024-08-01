@@ -1,5 +1,5 @@
 import "../Styling/profile.css";
-import profilepageImage from "./maxbill.jpg"; // Adjust the path as necessary
+import profilepageImage from "./maxbill.jpg";
 import {  userN, userPhoto } from './Navbar';
 
 
