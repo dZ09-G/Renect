@@ -11,7 +11,7 @@ export function Signin() {
     try {
       const result = await signInWithPopup(auth, provider);
       console.log(result);
-      navigate("/home"); // Example: Navigate to home page after successful sign-in
+      navigate("/home");
     } catch (error) {
       console.error("Sign-in error:", error);
     }
