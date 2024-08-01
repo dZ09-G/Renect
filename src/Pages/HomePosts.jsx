@@ -1,8 +1,8 @@
 import React, { useEffect, useState, useContext } from 'react';
-import '../Styling/poststyle.css'; // Adjust path as needed
+import '../Styling/poststyle.css';
 import { collection, addDoc, query, where, getDocs, deleteDoc, doc } from 'firebase/firestore';
 import { database } from '../config/firebase';
-import { userId, userLogedin } from '../Components/Navbar'; // Assuming userId is imported correctly
+import { userId, userLogedin } from '../Components/Navbar';
 import { useNavigate } from "react-router-dom";
 import { ProfileButtonContext } from '../ProfileButtonContext';
 import {LogedinContext} from "../LogedinContext";
@@ -18,7 +18,7 @@ export const HomePosts = (props) => {
     const { logedinState, setlogedinState } = useContext(LogedinContext);
 
 
-    const navigate = useNavigate(); // React Router hook for navigation
+    const navigate = useNavigate();
     const isCurrentUserPost = post.uId === userId;
 
     const likeRef = collection(database, 'likes');
@@ -71,7 +71,6 @@ export const HomePosts = (props) => {
         updateLikesCount();
     }, []);
 
-    // Handle redirection if user is not logged in
     if (!logedinState) {
         return null;
     }
